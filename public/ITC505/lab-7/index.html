@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Travel Mad Lib</title>
+  <link rel="stylesheet" href="/ITC505/lab-7/styles.css" />
+</head>
+<body>
+  <main class="wrapper">
+    <h1>🕰️ Time Travel Mad Lib</h1>
+    <p class="subtitle">Craft your own futuristic adventure!</p>
+
+    <form action="/ITC505/lab-7/submit" method="POST">
+      <label for="year">Enter a Year:</label>
+      <input type="text" id="year" name="year" placeholder="e.g. 3025" required>
+
+      <label for="profession">Enter a Profession:</label>
+      <input type="text" id="profession" name="profession" placeholder="e.g. scientist" required>
+
+      <label for="gadget">Enter a Gadget:</label>
+      <input type="text" id="gadget" name="gadget" placeholder="e.g. teleportation watch" required>
+
+      <label for="emotion">Enter an Emotion:</label>
+      <input type="text" id="emotion" name="emotion" placeholder="e.g. excitement" required>
+
+      <label for="planet">Enter a Planet:</label>
+      <input type="text" id="planet" name="planet" placeholder="e.g. Mars" required>
+
+      <button type="submit">Launch Story</button>
+    </form>
+
+    <section class="addendum">
+      <h2>Addendum</h2>
+      <p>
+        This project implements a **Mad Lib generator** with a unique time travel theme. 
+        The ExpressJS server processes POST form data and returns a custom response. 
+        Key highlights:
+      </p>
+      <ul>
+        <li><strong>Express Middleware:</strong> Used <code>express.urlencoded()</code> for easy form parsing.</li>
+        <li><strong>Custom Route:</strong> Handled POST requests at <code>/ITC505/lab-7/submit</code>.</li>
+        <li><strong>Server Logging:</strong> Integrated <code>morgan</code> for clean server logs.</li>
+        <li><strong>Error Handling:</strong> Returns a friendly HTML message for incomplete submissions.</li>
+        <li><strong>Responsive Design:</strong> Styled with a soft futuristic look using CSS gradients and shadows.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Last updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
