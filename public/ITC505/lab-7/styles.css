@@ -1,54 +1,55 @@
-
+/* styles.css - Time Travel Theme */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #141E30, #243B55);
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .wrapper {
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
-  margin-top: 40px;
-  padding: 30px 40px;
+  margin-top: 50px;
+  padding: 35px;
   width: 460px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
   text-align: center;
   font-size: 26px;
-  color: #7fd1ff;
+  color: #76e2f4;
 }
 
 .subtitle {
   text-align: center;
   font-size: 14px;
-  color: #cce8ff;
+  color: #bdeaff;
   margin-bottom: 20px;
 }
 
 label {
   display: block;
-  margin-top: 12px;
+  margin-top: 10px;
   font-weight: 600;
-  color: #e0e0e0;
+  color: #e8f7ff;
 }
 
 input[type="text"] {
   width: 100%;
   padding: 10px;
-  margin-top: 6px;
+  margin-top: 5px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.9);
   color: #222;
+  font-size: 15px;
 }
 
 button {
@@ -56,31 +57,39 @@ button {
   padding: 12px;
   margin-top: 20px;
   border: none;
-  border-radius: 6px;
-  background: #00bfff;
-  color: #fff;
+  border-radius: 8px;
+  background: #00baff;
+  color: white;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background: #009fd1;
+  background: #008fcc;
 }
 
 .addendum {
   margin-top: 25px;
   background: rgba(255, 255, 255, 0.15);
-  border-left: 5px solid #00bfff;
-  border-radius: 10px;
+  border-left: 5px solid #00baff;
+  border-radius: 12px;
   padding: 15px;
-  color: #d4eaff;
+  color: #e6f9ff;
+}
+
+.addendum h2 {
+  color: #7fdfff;
 }
 
 footer {
+  width: 100%;
   text-align: center;
-  font-size: 13px;
-  margin-top: 20px;
-  color: #bcd7f3;
+  font-size: 14px;
+  color: #bcdffb;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  background: transparent;
 }
